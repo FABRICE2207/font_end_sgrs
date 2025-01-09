@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>ASCCI : SGRS</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="./images/logo_ascci.png" type="image/x-icon">
     <!-- Lien bootstrap -->
     <link
       rel="stylesheet"
@@ -36,7 +39,7 @@
 
       /* formulaire */
       .tab{
-        margin: 5%;
+        margin: 2%;
         padding: 5px;
         display: none;
       }
@@ -55,6 +58,11 @@
         margin-right: -15px;
       }
 
+       a:hover {
+        text-decoration: none;
+        color: white;
+       }
+
       .delete{
         text-decoration: none;
         display: inline-block;
@@ -70,6 +78,7 @@
         justify-content: center;
         align-items: center;
         cursor: pointer;
+        border-radius: 2px;
         /* margin-left: -20px; */
       }
 
@@ -82,7 +91,6 @@
       }
     </style>
 
-    <title>SGRS</title>
   </head>
   <body>
     <div class="container-fluid" id="header-bg">
@@ -165,6 +173,15 @@
         <!-- Etape 2 -->
         <div class="tab">
           <h3 class="text-center">LES FORMATIONS SUIVIES</h3>
+          
+            <!-- Btn ajouter une nouvelle ligne -->
+           <div class="row" style="margin-top: 20px;">
+               <div class="col">
+                   <!-- <button class="btn btn-success add" style="background-color: #FF6B02; border-color: #FF6B02;">Ajouter nouvelle ligne</button> -->
+               <a href="#" class="btn btn-success add" style="background-color: #FF6B02; border-color: #FF6B02;">Ajouter nouvelle ligne</a>
+               </div>
+           </div>
+
           <div class="row">
             <div class="col-md-3">
              <label for="">Intitulé</label>
@@ -188,19 +205,9 @@
            <div class="imp-group">
 
            </div>
-        
-
-           <!-- Btn ajouter une nouvelle ligne -->
-           <div class="row" style="margin-top: 20px;">
-               <div class="col">
-                   <!-- <button class="btn btn-success add" style="background-color: #FF6B02; border-color: #FF6B02;">Ajouter nouvelle ligne</button> -->
-               <a href="#" class="btn btn-success add" style="background-color: #FF6B02; border-color: #FF6B02;">Ajouter nouvelle ligne</a>
-               </div>
-           </div>
           
         </div>  
     
-
          <!-- Etape 3 -->
          <div class="tab">
             <h3 class="text-center">LES FONCTIONS OCCUPEES</h3>
@@ -251,7 +258,7 @@
         </div>
         
         <!-- Les boutons -->
-        <div class="row" id="btn" style="padding: 15px;">
+        <div class="row" id="btn" style="padding-bottom: 20px;margin: 10px 0px;">
             <div class="col" style="display: flex; justify-content: space-between;">
                 <button type="button" class="btn btn-outline-success prev">Précédent</button>
                 <button type="button" class="btn btn-success next">Suivant</button>

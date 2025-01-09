@@ -19,14 +19,13 @@ if(i === 0) {
 
 btnNext.addEventListener('click', function(){
 
-
-    const allInputPerTab = allTab[i].querySelectorAll('input');
-    for(let j = 0; j < allInputPerTab.length; j++){
-        if(allInputPerTab[j].value === '' || !allInputPerTab[j].checkValidity()){
-            allInputPerTab[j].style.borderColor = 'red';
-            return false;
-        }
-    }
+    // const allInputPerTab = allTab[i].querySelectorAll('input');
+    // for(let j = 0; j < allInputPerTab.length; j++){
+    //     if(allInputPerTab[j].value === '' || !allInputPerTab[j].checkValidity()){
+    //         allInputPerTab[j].style.borderColor = 'red';
+    //         return false;
+    //     }
+    // }
 
     i += 1;
 

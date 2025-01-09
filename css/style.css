@@ -35,7 +35,7 @@ body::before{
 }
 
 h1{
-    font-size: 4rem;
+    /* font-size: 3rem; */
     color: white;
     font-weight: bold;
 }
@@ -43,4 +43,8 @@ h1{
 .texte .bouton {
     justify-content: center;
     gap: 20px;
+}
+
+.modal-header h2{
+    text-align: center;
 }
