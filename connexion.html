@@ -100,9 +100,15 @@
         text-decoration: none;
       }
 
-       @media all and (max-width: 600px) {
+       @media (min-width: 600px) {
         #connexion {
-           max-width: 100%;
+           width: 30%;
+        }
+      }
+
+       @media (max-width: 600px) {
+        #connexion {
+           width: 100%;
         }
       }
       
@@ -129,12 +135,14 @@
     <!-- Formulaire -->
     <div id="connexion" class="container" 
         style="border-radius: 10px; box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.37);
-        max-width: 30%; margin-top: 5%;"
+         margin-top: 5%;"
         >
       <form action="#" id="msform">
         <!-- Etape 1 -->
         <div class="tab">
-          <h3 class="text-center">CONNEXION</h3>
+          <div class="row">
+            <h3 class="text-center">CONNEXION</h3>
+          </div>
           <div class="row">
              <label for="">Email</label>
               <input type="text" name="email" class="form-control"/>
