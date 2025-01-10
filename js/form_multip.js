@@ -30,9 +30,9 @@ btnNext.addEventListener('click', function(){
     i += 1;
 
     if(i>= allTab.length){
-        form.submit()
+        // form.submit()
         location.replace('connexion.html')
-        return false;
+        // return false;
     } else {
         for(let j = 0; j < allTab.length; j++){
             allTab[j].classList.remove('show');
@@ -109,8 +109,8 @@ function addInput(){
 
     const btn = document.createElement('a');
     btn.className = "delete";
-    // btn.innerHTML = "&times";
-    btn.innerHTML = "Supprimer";
+    btn.innerHTML = "&times";
+    // btn.innerHTML = "Supprimer";
 
     btn.addEventListener('click', removeInput);
 
